@@ -1,0 +1,11 @@
+publish:
+  docker:
+    registry: <registry>
+    username: <username>
+    password: <password>
+    email: cd@inmz.net
+    repo: inmz/rubytest
+    tag: $$COMMIT
+    force_tag: true
+    environment:
+      - DOCKER_LAUNCH_DEBUG=true
